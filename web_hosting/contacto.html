@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5 - Ejercicio 2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav>
+        <img src="src/M5-logo-azul.svg" alt="logo-web-hosting" id="logo">
+        <a href="index.html">HOME</a>
+        <a href="contacto.html" class="activo">CONTACTO</a>
+    </nav>
+    <main>
+        <h3>¿Querés que nos contactemos con vos?</h3>
+        <form action="codigo.php" method="post">
+            <p>Dejanos tu consulta:</p>
+            <label for="nombre">Nombre completo <span>*</span></label>
+            <input type="text" required>
+            <label for="email">Email <span>*</span></label>
+            <input type="email" required placeholder="juan@email.com">
+            <label for="comentario">Comentario <span>*</span></label>
+            <textarea required></textarea>
+            <input class="boton_resetear" type="reset" value="Resetear">
+            <input class="boton_enviar" type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
